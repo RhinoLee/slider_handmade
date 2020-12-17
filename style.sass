@@ -1,2 +1,47 @@
+html, body 
+  margin: 0
+  padding: 0
 body 
-  background: #000
+  padding-top: 200px
+  padding-bottom: 200px
+img 
+  display: block
+  
+[class *= 'fa-arrow']
+  color: #000
+  font-size: 70px
+  cursor: pointer
+
+.slider-container 
+  position: relative
+  overflow: hidden
+  width: 100%
+
+.slider-wrapper 
+  display: flex
+  width: 100%
+  overflow: hidden
+  
+
+
+.slide-item 
+  flex-shrink: 0
+
+
+
+.slider-arrow 
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  width: 50%
+  display: flex
+  justify-content: space-between
+  width: 100%
+  .prev 
+    margin-left: 50px
+  .next 
+    margin-right: 50px
+
+
+  
