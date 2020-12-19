@@ -48,4 +48,30 @@ img
     margin-right: 50px
 
 
+.slide-bullets-bar
+  position: absolute
+  bottom: 20px
+  left: 50%
+  transform: translateX(-50%)
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  .slide-bullet 
+    margin: 0 5px
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: #000
+    opacity: 0.6
+    cursor: pointer
+    transition: .4s
+    &.active, &:hover
+      opacity: 1
+      transform: scale(1.1)
+
+
+
+
+
   
