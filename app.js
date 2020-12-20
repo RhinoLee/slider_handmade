@@ -22,18 +22,24 @@
 
   }
 
+  const removeBulletActive = (bullets) => {
+    bullets.forEach( (bullet, idx) => {
+      bullet.classList.remove('active')
+    })
+  }
+
   const bulletHandler = () => {
 
     const bullets = document.querySelectorAll('.slide-bullets-bar .slide-bullet')
+    removeBulletActive(bullets)
     bullets[activeIdx].classList.add('active')
+    
+
     bullets.forEach( (bullet, idx) => {
 
       bullet.addEventListener('click', (e) =>{
-
-        bullets.forEach( (bullet, idx) => {
-          bullet.classList.remove('active')
-
-        })
+        
+        removeBulletActive(bullets)
         e.currentTarget.classList.add('active')
         setActiveIdx(idx)
         setSlidePosition()
@@ -41,9 +47,11 @@
       })
     })
 
-    bullets[activeIdx].click()
+    // bullets[activeIdx].click()
 
   }
+
+  
   
 
   const setActiveIdx = (num) => {
