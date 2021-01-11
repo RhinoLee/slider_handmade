@@ -30,17 +30,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .slide-item {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100%;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .slider-arrow {
